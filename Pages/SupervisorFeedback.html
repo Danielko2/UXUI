@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/SupervisorFeedback.css">
+    <script defer src="/JS/SupervisorFeedback.js"></script>
+</head>
+
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/HtmlPage.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/selfreport.html"><i class="fas fa-clipboard"></i><span>Self-report</span></a>
+            <a href="/Pages/scheduler.html"><i class="fas fa-calendar-alt"></i><span>Scheduler</span></a>
+            <a href="/Pages/SupervisorFeedback.html"><i class="fas fa-comments"></i><span>Feedback</span></a>
+
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="feedback-container">
+            <h2>Your Feedbacks</h2>
+        
+            <ul id="feedback-list"></ul>
+        </div>
+    </main>
+
+ 
+</body>
+
+</html>

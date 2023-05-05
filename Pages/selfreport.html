@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support - Self-report</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="/CSS/selfreport.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
+</head>
+
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/HtmlPage.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/selfreport.html"><i class="fas fa-clipboard"></i><span>Self-report</span></a>
+            <a href="/Pages/scheduler.html"><i class="fas fa-calendar-alt"></i><span>Scheduler</span></a>
+            <a href="/Pages/SupervisorFeedback.html"><i class="fas fa-comments"></i><span>Feedback</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="self-report">
+            <form>
+                <label for="mood">1. How was your mood today?</label>
+
+                <select name="mood" id="mood">
+                    <option value="very-bad">Very Bad</option>
+                    <option value="bad">Bad</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                </select>
+                <label for="stress">2. How stressed were you today?</label>
+
+                <select name="stress" id="stress">
+                    <option value="very-bad">Very Bad</option>
+                    <option value="bad">Bad</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                </select>
+                <label for="sleep">3. How was your sleep last night?</label>
+
+                <select name="sleep" id="sleep">
+                    <option value="very-bad">Very Bad</option>
+                    <option value="bad">Bad</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                </select>
+                <label for="academic">4. How was your academic performance lately?</label>
+
+                <select name="academic" id="academic">
+                    <option value="very-bad">Very Bad</option>
+                    <option value="bad">Bad</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                </select>
+                <div class="open-question">
+                    <label for="feelings">5. Describe how you feel:</label>
+                    <textarea name="feelings" id="feelings" rows="5" cols="50"></textarea>
+                    <button type="submit">Submit</button>
+                    <p id="message" class="message hidden">Self-report submitted!</p>
+                </div>
+
+                <section class="saved-data">
+
+                    <ul id="saved-reports"></ul>
+                </section>
+            </form>
+
+        </section>
+        
+      
+    </main>
+    <script src="/JS/self-report.js" defer></script>
+</body>
+</html>

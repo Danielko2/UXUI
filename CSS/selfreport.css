@@ -1,0 +1,94 @@
+﻿.self-report {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .self-report form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 1rem;
+        margin-right: 2rem;
+    }
+
+        .self-report form label {
+            margin-bottom: 0.5rem;
+        }
+
+        .self-report form select {
+            margin-bottom: 1rem;
+        }
+
+        .self-report form button {
+            align-self: flex-start;
+        }
+
+.open-question {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+    .open-question textarea {
+        margin-bottom: 1rem;
+    }
+.form-wrapper {
+    position: relative;
+}
+
+.message {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    .message.show {
+        opacity: 1;
+    }
+    .message.hidden {
+        display: none;
+    }
+.saved-data {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+    .saved-data h2 {
+        margin-bottom: 1rem;
+    }
+
+#saved-reports {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    #saved-reports li {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+.delete-button {
+    margin-left: 1rem;
+}

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose View</title>
+    <link rel="stylesheet" href="/CSS/firstpage.css">
+</head>
+<body>
+    <div class="view-options">
+        <button id="student-view">Student View</button>
+        <button id="supervisor-view">Supervisor View</button>
+        <button id="senior-tutor-view">Senior Tutor View</button>
+    </div>
+    <script>
+        document.getElementById('student-view').addEventListener('click', () => {
+            window.location.href = 'HtmlPage.html';
+        });
+
+        document.getElementById('supervisor-view').addEventListener('click', () => {
+            window.location.href = 'Supervisor.html';
+        });
+
+        document.getElementById('senior-tutor-view').addEventListener('click', () => {
+            window.location.href = 'senior-tutor.html';
+        });
+    </script>
+</body>
+</html>

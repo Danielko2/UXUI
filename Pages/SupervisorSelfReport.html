@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <title>Supervisor - View Self-Reports</title>
+    <link rel="stylesheet" href="/CSS/SupervisorSelfReport.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/WelcomePageSupervisor.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/Supervisor.html"><i class="fas fa-calendar-alt"></i><span>Scheduler</span></a>
+            <a href="/Pages/SupervisorSelfReport.html"><i class="fa fa-file-text"></i></i><span>Feedback</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="reports-stats">
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 0;"></div>
+                <div class="progress-info">
+                    <span>Responded: <span id="responded-reports">0</span></span>
+                    <span>Total: <span id="total-reports">0</span></span>
+                </div>
+            </div>
+        </section>
+        <div class="navigation-buttons">
+            <button id="prevButton" onclick="prevReports()">Previous</button>
+            <button id="nextButton" onclick="nextReports()">Next</button>
+        </div>
+        <div class="self-reports-container">
+
+            <div class="self-reports-list">
+                <ul id="self-reports"></ul>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/JS/SupervisorSelfReport.js"></script>
+    <div id="responseModal" class="modal">
+        <div class="modal-content">
+            <h2>Respond to Report</h2>
+            <textarea id="responseText" rows="6" placeholder="Enter your response here..."></textarea>
+            <button id="saveResponse" class="modal-button">Save</button>
+            <button id="cancelResponse" class="modal-button">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

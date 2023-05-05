@@ -1,0 +1,182 @@
+﻿body {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.column {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 350px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+    li .student-username {
+        flex: 1;
+    }
+
+    li .supervisor-info {
+        flex: 1;
+        text-align: right;
+        margin-right: 1rem;
+    }
+
+.assign-button {
+    background-color: #84fab0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+    .assign-button:hover {
+        background-color: #5cda8d;
+    }
+
+li:last-child {
+    border-bottom: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 1rem;
+    width: 350px; 
+}
+
+#modalCloseButton {
+    background-color: #f7f7f7;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+    #modalCloseButton:hover {
+        background-color: #e0e0e0;
+    }
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#modalSupervisorsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+    #modalSupervisorsList li:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: #84fab0;
+    }
+
+    .modal-supervisors-list li {
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+       
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+.header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.header-student,
+.header-supervisor {
+    flex: 1;
+}
+
+.header-supervisor {
+    text-align: center;
+    margin-right: 1rem;
+}

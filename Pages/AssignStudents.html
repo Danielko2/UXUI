@@ -1,0 +1,57 @@
+﻿<!-- assign-students.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellConnect - Assign Students</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/assign-students.css">
+</head>
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/SeniorTutorWelcome.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/AssignStudents.html"><i class="fas fa-user-plus"></i><span>Assign Students</span></a>
+            <a href="/Pages/CheckMeetings.html"><i class="fas fa-calendar-check"></i><span>Check Meetings</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Assign Students to Supervisors</h1>
+        <div class="container">
+            <div class="column">
+                <h2>Supervisors</h2>
+                <ul id="supervisorsList"></ul>
+            </div>
+
+            <div class="column">
+                <h2>Students</h2>
+                <div class="header">
+                    <span class="header-student">Student ||</span>
+                    <span class="header-supervisor">Supervisor</span>
+                </div>
+                <ul id="studentsList"></ul>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Select Supervisor</h3>
+                <ul id="modalSupervisorsList"></ul>
+                <button id="modalCloseButton">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <script src="/JS/assignStudents.js" defer></script>
+    <script src="/JS/logoutassignstudnet.js" defer></script>
+</body>
+</html>

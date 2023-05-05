@@ -1,0 +1,102 @@
+﻿.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    min-height: calc(100vh - 100px);
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#calendar {
+    width: 100%;
+    max-width: 800px;
+}
+
+.fc-today {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+}
+.fc-month-view .fc-event {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 1.2;
+    height: auto; /* Allow the event height to adjust based on content */
+    max-height: 40px; /* Set a maximum height for the event */
+   
+}
+}
+
+/* Week view styles */
+.fc-agendaWeek-view .fc-event {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 1.2;
+    overflow: hidden; /* Hide the overflowing content */
+}
+
+/* Day view styles */
+.fc-agendaDay-view .fc-event {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 1.2;
+    overflow: hidden; /* Hide the overflowing content */
+}
+
+.fc-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+}
+
+    .fc-button:hover {
+        background-color: #0056b3;
+        color: #ffffff;
+    }
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .calendar-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 575px) {
+    .calendar-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+/* Event details modal */
+.event-details-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.event-details-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.fc-event:hover {
+    background-color: #0056b3;
+}

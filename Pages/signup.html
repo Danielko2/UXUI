@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support - Sign Up</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/login.css">
+    <script src="/JS/signup.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Add your header elements here -->
+    </header>
+    <main>
+        <div class="login-container">
+            <h1>Sign Up</h1>
+            <form>
+                <select id="userType">
+                    <option value="Student">Student</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Senior Tutor">Senior Tutor</option>
+                </select>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit" id="signup-button">Sign Up</button>
+                <button type="button" id="login-button" class="secondary-button">Already a user? Log In</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

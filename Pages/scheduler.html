@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support - Scheduler</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="/CSS/scheduler.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
+</head>
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/HtmlPage.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/selfreport.html"><i class="fas fa-clipboard"></i><span>Self-report</span></a>
+            <a href="/Pages/scheduler.html"><i class="fas fa-calendar-alt"></i><span>Scheduler</span></a>
+            <a href="/Pages/SupervisorFeedback.html"><i class="fas fa-comments"></i><span>Feedback</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="scheduler">
+            <h1>Schedule a Meeting</h1>
+            <form>
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" required>
+
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="time" required>
+
+                <button type="submit">Schedule Meeting</button>
+            </form>
+          
+            <section class="saved-meetings">
+                <h2>Saved Meetings</h2>
+                <ul id="meetings-list"></ul>
+            </section>
+        </section>
+    </main>
+    <script src="/JS/scheduler.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!-- supervisor-welcome.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellConnect - Supervisor Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/features.css">
+</head>
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/WelcomePageSupervisor.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/Supervisor.html"><i class="fas fa-calendar-alt"></i><span>Scheduler</span></a>
+            <a href="/Pages/SupervisorSelfReport.html"><i class="fa fa-file-text"></i><span>Feedback</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Welcome to WellConnect</h1>
+            <p class="ty">Providing support and guidance for student success.</p>
+            
+        </section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Scheduler</h3>
+                    <p>Accept or reschedule meetings with students to provide personalized support.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clipboard"></i>
+                    <h3>Feedback</h3>
+                    <p>Review student self-reports and provide feedback to help them improve.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/JS/scripts.js" defer></script>
+</body>
+</html>

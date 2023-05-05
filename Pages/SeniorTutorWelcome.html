@@ -1,0 +1,51 @@
+﻿<!-- senior-tutor-welcome.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellConnect - Senior Tutor Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/features.css">
+</head>
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/SeniorTutorWelcome.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/AssignStudents.html"><i class="fas fa-user-plus"></i><span>Assign Students</span></a>
+            <a href="/Pages/CheckMeetings.html"><i class="fas fa-calendar-check"></i><span>Check Meetings</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Welcome to WellConnect</h1>
+            <p class="ty">Providing support and guidance for student success.</p>
+        </section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Assign Students</h3>
+                    <p>Assign students to supervisors for better guidance and support.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Check Meetings</h3>
+                    <p>Oversee scheduled meetings between supervisors and students to ensure smooth communication.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/JS/SeniorTutorWelcome.js" defer></script>
+  
+</body>
+</html>

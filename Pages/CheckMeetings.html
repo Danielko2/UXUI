@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Tutor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/CheckMeeting.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script src="/JS/CheckMeetings.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+</head>
+<body>
+    <header>
+        <button id="nav-toggle" class="nav-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="navbar-brand">WellConnect</div>
+        </button>
+        <nav id="nav" class="nav">
+            <span id="loggedInUser"></span>
+            <a href="/Pages/SeniorTutorWelcome.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/Pages/AssignStudents.html"><i class="fas fa-user-plus"></i><span>Assign Students</span></a>
+            <a href="/Pages/CheckMeetings.html"><i class="fas fa-calendar-check"></i><span>Check Meetings</span></a>
+            <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calendar-container">
+            <div id="calendar"></div>
+        </div>
+    </main>
+    <div id="eventDetailsModal" class="event-details-modal">
+        <div class="event-details-content">
+            <h2>Event Details</h2>
+            <p id="eventDetailsText"></p>
+            <button id="closeEventDetails">Close</button>
+        </div>
+    </div>
+</body>
+</html>
